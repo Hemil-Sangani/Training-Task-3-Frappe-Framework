@@ -1,0 +1,12 @@
+[
+  {
+    "doctype": "Custom Field",
+    "dt": "Library Member",
+    "module": "Library Management",
+    "name": "Joined-Date",
+    "fieldname": "date_of_joining",
+    "fieldtype": "Date",
+    "label": "Joining Date",
+    "insert_after": "full_name"
+  }
+]

@@ -4,7 +4,9 @@ app_publisher = "hemil"
 app_description = "Library Management System"
 app_email = "test@gmail.com"
 app_license = "mit"
-
+fixtures = [
+    "Custom Field"
+]
 # Apps
 # ------------------
 

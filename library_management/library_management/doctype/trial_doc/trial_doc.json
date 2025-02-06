@@ -1,0 +1,210 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-02-06 17:31:14.715732",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "autocomplete_field",
+  "attach_field",
+  "attach_image_field",
+  "barcode",
+  "button",
+  "check",
+  "code",
+  "color",
+  "currency",
+  "duration",
+  "gl",
+  "heading",
+  "html",
+  "html_editor",
+  "icon",
+  "img",
+  "json",
+  "mde",
+  "password",
+  "percent",
+  "phone",
+  "ro",
+  "rating",
+  "select",
+  "sign",
+  "small_text",
+  "text",
+  "te",
+  "time"
+ ],
+ "fields": [
+  {
+   "fieldname": "autocomplete_field",
+   "fieldtype": "Autocomplete",
+   "label": "AutoComplete Field"
+  },
+  {
+   "fieldname": "attach_field",
+   "fieldtype": "Attach",
+   "label": "Attach Field"
+  },
+  {
+   "fieldname": "attach_image_field",
+   "fieldtype": "Attach Image",
+   "label": "Attach Image field"
+  },
+  {
+   "fieldname": "barcode",
+   "fieldtype": "Barcode",
+   "label": "Barcode"
+  },
+  {
+   "fieldname": "button",
+   "fieldtype": "Button",
+   "label": "Button"
+  },
+  {
+   "default": "0",
+   "fieldname": "check",
+   "fieldtype": "Check",
+   "label": "Check"
+  },
+  {
+   "fieldname": "code",
+   "fieldtype": "Code",
+   "label": "Code"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Color",
+   "label": "Color"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Currency",
+   "label": "Currency"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Duration",
+   "label": "Duration"
+  },
+  {
+   "fieldname": "gl",
+   "fieldtype": "Geolocation",
+   "label": "GL"
+  },
+  {
+   "fieldname": "heading",
+   "fieldtype": "Heading",
+   "label": "Heading"
+  },
+  {
+   "fieldname": "html",
+   "fieldtype": "HTML",
+   "label": "HTML"
+  },
+  {
+   "fieldname": "html_editor",
+   "fieldtype": "HTML Editor",
+   "label": "HTML Editor"
+  },
+  {
+   "fieldname": "icon",
+   "fieldtype": "Icon",
+   "label": "Icon"
+  },
+  {
+   "fieldname": "img",
+   "fieldtype": "Image",
+   "label": "Img"
+  },
+  {
+   "fieldname": "json",
+   "fieldtype": "JSON",
+   "label": "JSON"
+  },
+  {
+   "fieldname": "mde",
+   "fieldtype": "Markdown Editor",
+   "label": "MDE"
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Password",
+   "label": "Password"
+  },
+  {
+   "fieldname": "percent",
+   "fieldtype": "Percent",
+   "label": "Percent"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Phone",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "ro",
+   "fieldtype": "Read Only",
+   "label": "RO"
+  },
+  {
+   "fieldname": "rating",
+   "fieldtype": "Rating",
+   "label": "Rating"
+  },
+  {
+   "fieldname": "select",
+   "fieldtype": "Select",
+   "label": "Select"
+  },
+  {
+   "fieldname": "sign",
+   "fieldtype": "Signature",
+   "label": "Sign"
+  },
+  {
+   "fieldname": "small_text",
+   "fieldtype": "Small Text",
+   "label": "Small Text"
+  },
+  {
+   "fieldname": "text",
+   "fieldtype": "Text",
+   "label": "Text"
+  },
+  {
+   "fieldname": "te",
+   "fieldtype": "Text Editor",
+   "label": "TE"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "label": "Time"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-06 17:42:30.031862",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Trial Doc",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

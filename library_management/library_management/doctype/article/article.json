@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_rename": 1,
  "autoname": "naming_series:naming_series",
  "creation": "2025-01-30 12:49:53.369403",
@@ -9,10 +10,12 @@
   "article_name",
   "author",
   "isbn",
+  "route",
   "column_break_o1ou",
   "image",
   "status",
   "publisher",
+  "published",
   "section_break_tbno",
   "description",
   "notes",
@@ -35,6 +38,7 @@
   {
    "fieldname": "author",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Author"
   },
   {
@@ -45,18 +49,21 @@
   {
    "fieldname": "isbn",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "ISBN"
   },
   {
    "default": "Available",
    "fieldname": "status",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Status",
    "options": "Issued\nAvailable"
   },
   {
    "fieldname": "publisher",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Publisher"
   },
   {
@@ -77,12 +84,25 @@
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "label": "Naming Series"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
   }
  ],
+ "has_web_view": 1,
  "image_field": "image",
  "index_web_pages_for_search": 1,
+ "is_published_field": "published",
  "links": [],
- "modified": "2025-01-31 16:33:12.291108",
+ "modified": "2025-02-10 11:35:04.740788",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Article",
@@ -124,6 +144,7 @@
   }
  ],
  "quick_entry": 1,
+ "route": "articles",
  "sort_field": "creation",
  "sort_order": "DESC",
  "states": []

@@ -1,0 +1,13 @@
+{
+ "creation": "2025-02-14 17:22:11.802980",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart Source",
+ "idx": 0,
+ "modified": "2025-02-14 17:22:11.802980",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Library Transaction",
+ "owner": "Administrator",
+ "source_name": "Library Transaction",
+ "timeseries": 0
+}

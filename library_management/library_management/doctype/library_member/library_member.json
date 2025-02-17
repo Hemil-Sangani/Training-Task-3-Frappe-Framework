@@ -2,7 +2,7 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "naming_series:",
- "creation": "2025-01-30 16:24:11.552224",
+ "creation": "2025-02-14 13:44:34.915617",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
@@ -33,14 +33,18 @@
    "read_only": 1
   },
   {
+   "depends_on": "last_name",
    "fieldname": "email_address",
    "fieldtype": "Data",
-   "label": "Email Address"
+   "label": "Email Address",
+   "permlevel": 3
   },
   {
    "fieldname": "phone",
    "fieldtype": "Data",
-   "label": "Phone"
+   "label": "Phone",
+   "mandatory_depends_on": "email_address",
+   "permlevel": 2
   },
   {
    "fieldname": "naming_series",
@@ -50,7 +54,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-14 12:54:01.814602",
+ "modified": "2025-02-17 14:34:28.594760",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Library Member",
@@ -71,13 +75,28 @@
    "write": 1
   },
   {
+   "create": 1,
+   "delete": 1,
    "email": 1,
    "export": 1,
    "print": 1,
    "read": 1,
    "report": 1,
    "role": "Library Member",
-   "share": 1
+   "share": 1,
+   "write": 1
+  },
+  {
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "permlevel": 2,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Library Member",
+   "share": 1,
+   "write": 1
   }
  ],
  "sort_field": "creation",

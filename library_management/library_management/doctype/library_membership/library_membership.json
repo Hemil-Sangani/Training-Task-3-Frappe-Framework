@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "LMS-.#####",
+ "autoname": "format:{full_name}.-{####}",
  "creation": "2025-01-30 16:55:05.200971",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -64,11 +64,11 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-01-31 11:40:56.247346",
+ "modified": "2025-02-17 15:20:32.422800",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Library Membership",
- "naming_rule": "Expression (old style)",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

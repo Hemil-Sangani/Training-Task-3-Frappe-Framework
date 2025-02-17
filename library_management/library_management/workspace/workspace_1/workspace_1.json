@@ -1,0 +1,105 @@
+{
+ "charts": [
+  {
+   "chart_name": "Test Chart 1",
+   "label": "Test Chart 1"
+  }
+ ],
+ "content": "[{\"id\":\"LbWJmp9jqp\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Library Management</span>\",\"col\":12}},{\"id\":\"i_VoOxbcR6\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Library member\",\"col\":3}},{\"id\":\"9p7arEynqH\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Article\",\"col\":3}},{\"id\":\"I-fHpLryLA\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"wn2c_OZNvQ\",\"type\":\"card\",\"data\":{\"card_name\":\"Card 1\",\"col\":4}},{\"id\":\"BPLRm5k7VJ\",\"type\":\"card\",\"data\":{\"card_name\":\"Card 2\",\"col\":4}},{\"id\":\"E5Hi0yJikn\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Test Chart 1\",\"col\":12}},{\"id\":\"p1pwagk1PZ\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Number Card 1\",\"col\":4}}]",
+ "creation": "2025-02-17 10:19:32.510513",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "",
+ "idx": 0,
+ "indicator_color": "darkgrey",
+ "is_hidden": 0,
+ "label": "WorkSpace 1",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Card 1",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Library Membership",
+   "link_count": 0,
+   "link_to": "Library Membership",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Card 2",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Library Settings",
+   "link_count": 0,
+   "link_to": "Library Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Library Transaction",
+   "link_count": 0,
+   "link_to": "Library Transaction",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-02-17 10:27:10.413963",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "WorkSpace 1",
+ "number_cards": [
+  {
+   "label": "Number Card 1",
+   "number_card_name": "KKR"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 6.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Library member",
+   "link_to": "Library Member",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Article",
+   "link_to": "Article",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "WorkSpace 1"
+}

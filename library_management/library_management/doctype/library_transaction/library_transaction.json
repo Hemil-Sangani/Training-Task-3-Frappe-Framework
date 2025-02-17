@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_events_in_timeline": 1,
  "allow_rename": 1,
  "autoname": "prompt",
  "creation": "2025-01-31 11:56:27.756057",
@@ -37,15 +38,18 @@
   {
    "fieldname": "library_member",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Library Member",
-   "options": "Library Member"
+   "options": "Library Member",
+   "reqd": 1
   },
   {
    "default": "Issue",
    "fieldname": "type",
    "fieldtype": "Select",
    "label": "Type",
-   "options": "Issue\nReturn"
+   "options": "Issue\nReturn",
+   "reqd": 1
   },
   {
    "fieldname": "date",
@@ -56,11 +60,10 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-02-11 18:55:43.000287",
+ "modified": "2025-02-17 15:11:32.678759",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Library Transaction",
- "naming_rule": "Set by user",
  "owner": "Administrator",
  "permissions": [
   {

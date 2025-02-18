@@ -4,7 +4,13 @@
 frappe.listview_settings["Library Member"] = {
 	onload: function (listview) {
 		listview.page.add_button(__("Custom Button"), function () {
-			console.log("This is a Custom Button in List View");
+			frappe.call({
+				method: "library_management.library_management.api.file.display_result",
+				args: { doctype: listview.doctype},
+				callback: function (r) {
+					frappe.msgprint(r.message);
+				}
+			})
 		});
 	},
 };

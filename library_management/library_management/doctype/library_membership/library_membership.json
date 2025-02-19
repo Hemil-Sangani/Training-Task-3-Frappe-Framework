@@ -12,7 +12,8 @@
   "to_date",
   "paid",
   "library_member",
-  "amended_from"
+  "amended_from",
+  "pro_member"
  ],
  "fields": [
   {
@@ -59,12 +60,23 @@
    "label": "Library Member",
    "options": "Library Member",
    "reqd": 1
+  },
+  {
+   "default": "False",
+   "fieldname": "pro_member",
+   "fieldtype": "Check",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "PRO Member",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-02-17 15:20:32.422800",
+ "modified": "2025-02-19 18:19:04.732625",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Library Membership",

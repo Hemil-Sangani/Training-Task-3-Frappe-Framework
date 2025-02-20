@@ -7,6 +7,8 @@ app_license = "mit"
 fixtures = [
     "Custom Field"
 ]
+page_js = {"custom-page": "library_management/library_management/page/custom_page/custom_page.js"}
+
 # Apps
 # ------------------
 

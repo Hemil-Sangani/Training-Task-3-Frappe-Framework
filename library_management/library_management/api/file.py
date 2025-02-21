@@ -1,6 +1,6 @@
 import frappe
 
-@frappe.whitelist()
+@frappe.whitelist(allow_guest=True)
 def display_result(doctype):
     data = frappe.get_all(doctype)
     total_records = len(data)

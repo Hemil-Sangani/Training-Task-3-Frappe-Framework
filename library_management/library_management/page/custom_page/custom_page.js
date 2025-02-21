@@ -7,8 +7,31 @@ frappe.pages["custom-page"].on_page_load = function(wrapper) {
     page.set_title("Custom Page");
     page.set_title_sub('Subtitle');
     page.set_indicator("Correct","green");
-    page.set_primary_action("Print",()=>console.log("Print"));
-    page.set_secondary_action("Refresh",()=>console.log("Refresh"));
+    page.set_primary_action("Add Library Member",()=>{
+        const csrfToken = frappe.csrf_token;
+        fetch('http://library.test:8000/api/resource/Library%20Member',{
+            method: 'POST',
+            headers: {
+                "Content-Type": "application/json",
+                "X-Frappe-CSRF-Token": csrfToken,
+            },
+            body: JSON.stringify({
+                "first_name": "Ravindra",
+                "last_name": "Jadeja",
+                "email_address": "ravi_jadeja@tester.com",
+                "custom_age": 32
+            })
+    }).then(frappe.msgprint("New Library Member Created"));})
+    page.set_secondary_action("Admin Detail",()=>{
+        fetch('http://library.test:8000/api/resource/User/Administrator',{
+            method: 'GET',
+            headers: {
+                "Authorization": 'token 5c27a03d037091f:626f5dc61cb7389'
+            }
+        }).then(r => r.json()).then(r => {
+            frappe.msgprint("Admininstrator Name:" + r.data.full_name + "<br>" + "Email:" + r.data.email)
+    })
+    });
     page.add_menu_item("Item 1",()=>console.log("Item 1"));
     page.add_menu_item("Item 2",()=>console.log("Item 2"),true);
     page.add_action_item("Action 1",()=>console.log("Action 1"));

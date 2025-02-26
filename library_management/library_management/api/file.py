@@ -1,11 +1,24 @@
 import frappe
 from frappe.query_builder.functions import Count
+from frappe.query_builder.functions import Match
 
 @frappe.whitelist(allow_guest=True)
 def display_result(doctype):
     LM = frappe.qb.DocType(doctype)
     count_pages = Count(LM.first_name).as_("total_records")
-    data = frappe.qb.from_(LM).select(LM.first_name, LM.email_address, LM.phone, LM.custom_age).where(LM.custom_age != 0).where(LM.first_name=="Suresh").run()
+    score = Match(LM.first_name).Against("A").as_("score")
+    data = (
+        frappe.qb.from_(LM)
+        .select(
+            LM.first_name,
+            score,
+            LM.email_address,
+            LM.phone,
+            LM.custom_age
+        )
+        .where(LM.custom_age != 0)
+        .run(as_dict=True)
+    )   
     total_records = len(data)
     total_pages = frappe.qb.from_(LM).select(count_pages).run(as_dict=True)
     library_membership = frappe.qb.DocType("Library Membership")

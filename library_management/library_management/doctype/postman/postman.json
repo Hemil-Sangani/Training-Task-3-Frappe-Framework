@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:POSTMAN-{####}",
+ "creation": "2025-02-27 17:50:56.462302",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "postman_name",
+  "postman_id",
+  "postman_age"
+ ],
+ "fields": [
+  {
+   "fieldname": "postman_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Postman Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "postman_id",
+   "fieldtype": "Int",
+   "label": "Postman ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "postman_age",
+   "fieldtype": "Int",
+   "label": "Postman Age"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-27 18:14:47.164423",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Postman",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
